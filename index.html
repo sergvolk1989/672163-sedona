@@ -1,12 +1,124 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
+    <title>Седона</title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Профессиональный HTML и CSS, уровень 1</a>».</p>
-
-  </body>
+    <div class="main-page">
+      <header class="main-header">
+        <nav class="main-menu">
+          <ul class="main-menu-list">
+            <li class="main-menu-item">Информация</li>
+            <li class="main-menu-item">Фото и видео</li>
+            <li class="main-menu-item">Карта штата</li>
+            <li class="main-menu-item">гостиницы</li>
+          </ul>
+        </nav>
+        <div class="logo">
+          <a href="#" width="" height="">логотип страницы</a>
+        </div>
+      </header>
+      <main class="main-content">
+        <!--section потому что название блока "Введение"-->
+        <section class="introduction">
+          <p>WELCOME</p>
+          <p>-to the gargeous-</p>
+          <p>SEDONA</p>
+          <p>"Because the Grand Canyon sucks!"</p>
+        </section>
+        <!--article думаю потому что можно выдернуть, хоть он и большой, и вставить в другой сайт. Допустимо ли это оборачивать в этот тэг такие крупные блоки?-->
+        <article class="reasons">
+          <!--Здесь похоже на статью, поэтому шапка статьи и section-->
+          <header class="reason-header">
+            <h1>Sedona-небольшой городок в Аризоне, заслуживающий большего</h1>
+            <p>рассмотрим 5 причин, по которым седона круче, чем Гранд Каньон!</p>
+          </header>
+          <section class="five-reasons">
+            <!--первая причина-->
+            <div class="reason-one">
+              <h2 class="">Настоящий городок</h2>
+              <b>-№1-</b>
+              <p class="">Седона - не аттракцион для туристов, там течет своя жизнь</p>
+              <img src="#" alt="Фотография городка">
+            </div>
+            <!--вторая причина-->
+            <div class="reason-two">
+              <ul class="reason-two-list">
+                <li>
+                  <h2>Жилье</h2>
+                  <p>Рекомендуем пожить в настоящем отеле, все как в кино!</p>
+                </li>
+                <li>
+                  <h2>Еда</h2>
+                  <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь</p>
+                </li>
+                <li>
+                  <h2>Сувениры</h2>
+                  <p>Не только китайского, но и местного производства</p>
+                </li>
+              </ul>
+            </div>
+            <!--третья причина-->
+            <div class="reason-three">
+              <h2 class="">Настоящий городок</h2>
+              <b>-№1-</b>
+              <p class="">Седона - не аттракцион для туристов, там течет своя жизнь</p>
+              <img src="#" alt="Фотография городка">
+            </div>
+            <!--3 Причина, класс у причин 3,4,5 назвал одинакаво, так как одинаковая стилизация у них-->
+            <div class="reason-last">
+              <h2>Там есть мост дьявола</h2>
+              <b>-№2-</b>
+              <p>Да, по нему можно пройти, если конечно вы осмелитесь</p>
+              <img src="#" alt="Фотография моста">
+            </div>
+            <!--4 Причина-->
+            <div class="reason-last">
+              <h2>Небольшая прощадь</h2>
+              <b>-№3-</b>
+              <p>Все достопримечательности находятся очень близко</p>
+            </div>
+            <!--4 Причина-->
+            <div class="reason-last">
+              <h2>Красивая дорога</h2>
+              <b>-№4-</b>
+              <p>Ехать в Седону из Лас-Вегаса совсм не скучно!</p>
+            </div>
+            <!--5 Причина-->
+            <div class="reason-last">
+              <h2>Мало туристов</h2>
+              <b>-№5-</b>
+              <p>Большинство едет в Гранд Каньон и толпица там</p>
+            </div>
+          </section>
+        </article>
+        <div class="hotel-search">
+          <h2>Заинтересовались?</h2>
+          <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+          <!--Форма выбора гостиницы-->
+          <div class="hotel-search-form">
+            <h3>Поиск гостиницы в седоне</h3>
+            <span>Здесь будет форма</span>
+          </div>
+        </div>
+      </main>
+      <footer>
+        <span>Здесь будет карта</span>
+        <div>
+          <a href="#">#Visitsedona</a>
+        </div>
+        <div class="footer-socials">
+         <ul>
+           <li><a class="btn btn-social btn-twitter" href="#">Twitter</a></li>
+           <li><a class="btn btn-social btn-facebook" href="#">Facebook</a></li>
+           <li><a class="btn btn-social btn-youtube" href="#">Youtube</a></li>
+         </ul>
+       </div>
+       <div class="footer-copyright">
+         <b>website by</b>
+         <a class="htmlacademy" href="#">htmlacademy</a>
+       </div>
+      </footer>
+    </div>
 </html>
