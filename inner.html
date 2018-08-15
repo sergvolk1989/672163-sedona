@@ -7,86 +7,116 @@
   <body>
     <div class="main-page">
       <header class="main-header">
-          <ul class="main-menu-list">
-            <li class="main-menu-item">Информация</li>
-            <li class="main-menu-item">Фото и видео</li>
-            <li class="main-menu-item">Карта штата</li>
-            <li class="main-menu-item">гостиницы</li>
-          </ul>
-        <div class="logo">
-          <a href="#" width="" height="">логотип страницы</a>
-        </div>
+        <ul class="main-menu-list">
+          <li class="main-menu-item"><a class="main-menu-link"href="#">Информация</a></li>
+          <li class="main-menu-item"><a class="main-menu-link"href="#">Фото и видео</a></li>
+          <li class="main-menu-item"><a class="main-menu-link"href="#">Карта штата</a></li>
+          <li class="main-menu-item"><a class="main-menu-link"href="#">гостиницы</a></li>
+        </ul>
+        <a class="logo" href="#" width="" height="">логотип страницы</a>
       </header>
 
+      <!--Разметка блока с фильтрами-->
       <div class="filter-hotels">
-        <span>Разметка формы</span>
+        <div class="filter-hotels-infrastructure">
+          <h2 class="filter-hotels-infrastructure-heading">Инфраструктура:</h2>
+          <span>Форма с чекбоксами</span>
+        </div>
+        <div class="filter-hotels-type_of_house">
+          <h2 class="filter-hotels-type_of_house-heading">Тип жилья:</h2>
+          <span>Форма с чекбоксами</span>
+        </div>
+        <div class="filter-hotels-cost">
+          <h2 class="filter-hotels-cost-heading">Стоимость в сутки (Р):</h2>
+          <form action=""></form>
+          <a href="#" class="btn-hotels-cost">Показать</a>
+        </div>
       </div>
-      <div class="catalog-hotels">
-        <header class="header-type-hotels">
-          <h2>Найдено: 3</h2>
-          <div>
-            <h3>Сортировка</h3>
-            <ul>
-              <li><a href="#">По цене</a></li>
-              <li><a href="#"></a>По типу</li>
-              <li><a href="#"></a>По рейтингу</li>
-            </ul>
-          </div>
-          <div>
-            <span>Иконки сортировки</span>
-          </div>
-        </header>
-        <section class="content-type-hotels">
-          <ul>
-            <li>
-              <div>
-                <img src="http://placehold.it/150x100" class="picture-hotels">
-                <h3 class="name-hotels">Amara resort & SPA</h3>
-                <span>гостиница</span>
-                <span>От 4000</span>
-                <a href="#">Подробнее</a>
-                <a href="#">Забронировать</a>
-              </div>
-              <div class="rating-hotels">
-                <span>Звездочки</span>
-                <span>Рейтинг: 8.5</span>
-              </div>
-            </li>
-            <li>
-              <div>
-                <img src="http://placehold.it/150x100" class="picture-hotels">
-                <h3 class="name-hotels">Desert Quail inn</h3>
-                <span>Мотель</span>
-                <span>От 3000</span>
-                <a href="#">Подробнее</a>
-                <a href="#">Забронировать</a>
-              </div>
-              <div class="rating-hotels">
-                <span>Звездочки</span>
-                <span>Рейтинг: 8.9</span>
-              </div>
-            </li>
-            <li>
-              <div>
-                <img src="http://placehold.it/150x100" class="picture-hotels">
-                <h3 class="name-hotels">Villas AT Poco Diablo</h3>
-                <span>Апартаменты</span>
-                <span>От 2000</span>
-                <a href="#">Подробнее</a>
-                <a href="#">Забранировать</a>
-              </div>
-              <div class="rating-hotels">
-                <span>Звездочки</span>
-                <span>Рейтинг: 9.2</span>
-              </div>
-            </li>
+
+      <div class="catalog-hotels-header">
+        <div class="catalog-hotels-header-heading">
+          <h2>Найдено:</h2><span>3</span>
+        </div>
+        <div class="catalog-hotels-header-sorting">
+          <h3>Сортировка</h3>
+          <ul class="catalog-hotels-header-list">
+            <li class="catalog-hotels-header-item"><a href="#">По цене</a></li>
+            <li class="catalog-hotels-header-item"><a href="#"></a>По типу</li>
+            <li class="catalog-hotels-header-item"><a href="#"></a>По рейтингу</li>
           </ul>
-        </section>
+        </div>
+
+      <div class="catalog-hotels-header-btn">
+        <span>1 Кнопка сортировки в виде треугольника</span>
+        <span>2 Кнопка сортировки в виде треугольника</span>
       </div>
-      <footer>
-        <span>Здесь будет карта</span>
+
+      <section class="type-hotels">
+        <div class="type-hotels-one">
+          <figure class="type-hotels-one-image">
+            <a class="type-hotels-one-image-link" href="#"><img src="http://placehold.it/150x100"></a>
+          </figure>
+          <div class="type-hotels-one-description">
+            <h2 class="name-hotels-one">Amara resort & SPA</h2>
+            <span>гостиница</span>
+            <span>От 4000</span>
+            <a class="type-hotels-btn_detail" href="#">Подробнее</a>
+            <a class="type-hotels-btn_booking" href="#">Забронировать</a>
+          </div>
+          <div class="rating-hotels-one">
+            <span class="rating-hotels-one-stars">Звездочка №1</span>
+            <span class="rating-hotels-one-stars">Звездочка №2</span>
+            <span class="rating-hotels-one-stars">Звездочка №3</span>
+            <span class="rating-hotels-one-stars">Звездочка №4</span>
+            <span class="rating-hotels-one-numeral">Рейтинг: 8.5</span>
+          </div>
+        </div>
+
+        <div class="type-hotels-two">
+          <figure class="type-hotels-two-image">
+            <a class="type-hotels-two-image-link" href="#"><img src="http://placehold.it/150x100"></a>
+          </figure>
+          <div class="type-hotels-two-description">
+            <h2 class="name-hotels-two">Desert Quail inn</h2>
+            <span>Мотель</span>
+            <span>От 3000</span>
+            <a class="type-hotels-btn_detail" href="#">Подробнее</a>
+            <a class="type-hotels-btn_booking" href="#">Забронировать</a>
+          </div>
+          <div class="rating-hotels-two">
+            <span class="rating-hotels-two-stars">Звездочка №1</span>
+            <span class="rating-hotels-two-stars">Звездочка №2</span>
+            <span class="rating-hotels-two-stars">Звездочка №3</span>
+            <span class="rating-hotels-two-stars">Звездочка №4</span>
+            <span class="rating-hotels-two-numeral">Рейтинг: 8.9</span>
+          </div>
+        </div>
+
+        <div class="type-hotels-three">
+          <figure class="type-hotels-three-image">
+            <a class="type-hotels-three-image-link" href="#"><img src="http://placehold.it/150x100"></a>
+          </figure>
+          <div class="type-hotels-three-description">
+            <h2 class="name-hotels-three">Villas AT Poco Diablo</h2>
+            <span>Апартаменты</span>
+            <span>От 2000</span>
+            <a class="type-hotels-btn_detail" href="#">Подробнее</a>
+            <a class="type-hotels-btn_booking" href="#">Забронировать</a>
+          </div>
+          <div class="rating-hotels-three">
+            <span class="rating-hotels-three-stars">Звездочка №1</span>
+            <span class="rating-hotels-three-stars">Звездочка №2</span>
+            <span class="rating-hotels-three-stars">Звездочка №3</span>
+            <span class="rating-hotels-three-stars">Звездочка №4</span>
+            <span class="rating-hotels-three-numeral">Рейтинг: 8.9</span>
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <span class="footer-map">Здесь будет карта</span>
         <div>
-          <a href="#">#Visitsedona</a>
+          <a class="Visitsedona" href="#">#Visitsedona</a>
         </div>
         <div class="footer-socials">
          <ul>
@@ -96,7 +126,7 @@
          </ul>
        </div>
        <div class="footer-copyright">
-         <b>website by</b>
+         <b class="websiteby">website by</b>
          <a class="htmlacademy" href="#">htmlacademy</a>
        </div>
       </footer>
