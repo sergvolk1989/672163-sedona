@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>Седона</title>
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <div class="main-page">
@@ -11,7 +13,7 @@
           <li class="main-menu-item"><a class="main-menu-link"href="#">Информация</a></li>
           <li class="main-menu-item"><a class="main-menu-link"href="#">Фото и видео</a></li>
           <li class="main-menu-item"><a class="main-menu-link"href="#">Карта штата</a></li>
-          <li class="main-menu-item"><a class="main-menu-link"href="#">гостиницы</a></li>
+          <li class="main-menu-item"><a class="main-menu-link"href="inner.html">гостиницы</a></li>
         </ul>
         <a class="logo" href="#" width="" height="">логотип страницы</a>
       </header>
@@ -23,15 +25,15 @@
               <h2 class="filter-options-title">Инфраструктура:</h2>
               <ul>
                 <li>
-                  <input class="form-checkbox" id="facilities-1" type="checkbox" name="facilities-1" checked>
+                  <input class="form-checkbox visually-hidden" id="facilities-1" type="checkbox" name="facilities-1" checked>
                   <label class="form-label" for="facilities-1">Бассейн</label>
                 </li>
                 <li>
-                  <input class="form-checkbox" id="facilities-2" type="checkbox" name="facilities-2">
+                  <input class="form-checkbox visually-hidden" id="facilities-2" type="checkbox" name="facilities-2">
                   <label class="form-label" for="facilities-2">Парковка</label>
                 </li>
                 <li>
-                  <input class="form-checkbox" id="facilities-3" type="checkbox" name="facilities-3">
+                  <input class="form-checkbox visually-hidden" id="facilities-3" type="checkbox" name="facilities-3">
                   <label class="form-label" for="facilities-3">Wi-Fi</label>
                 </li>
               </ul>
@@ -40,15 +42,15 @@
               <h2 class="filter-options-title">Тип жилья:</h2>
               <ul>
                 <li>
-                  <input class="form-checkbox" id="housing-1" type="checkbox" name="housing-1" checked>
+                  <input class="form-checkbox visually-hidden" id="housing-1" type="checkbox" name="housing-1" checked>
                   <label class="form-label" for="housing-1">Гостиница</label>
                 </li>
                 <li>
-                  <input class="form-checkbox" id="housing-2" type="checkbox" name="housing-2" checked>
+                  <input class="form-checkbox visually-hidden" id="housing-2" type="checkbox" name="housing-2" checked>
                   <label class="form-label" for="housing-2">Мотель</label>
                 </li>
                 <li>
-                  <input class="form-checkbox" id="housing-3" type="checkbox" name="housing-3" checked>
+                  <input class="form-checkbox visually-hidden" id="housing-3" type="checkbox" name="housing-3" checked>
                   <label class="form-label" for="housing-3">Апартаменты</label>
                 </li>
               </ul>
@@ -86,8 +88,8 @@
         </ul>
       </div>
       <div class="catalog-hotels-header-btn">
-        <span>1 Кнопка сортировки в виде треугольника</span>
-        <span>2 Кнопка сортировки в виде треугольника</span>
+        <a href="#" class="icon-sort-up"><span class="visually-hidden">Кнопка сортировки вверх</span></a>
+        <a href="#" class="icon-sort-down"><span class="visually-hidden">Кнопка сортировки вниз</span></a>
       </div>
     </div>
     <section class="type-hotels">
@@ -110,10 +112,10 @@
         </div>
         <div class="rating-hotels-one">
           <div class="rating-hotels-stars">
-            <span class="rating-hotels-one-stars">Рейтинг - звезда 1</span>
-            <span class="rating-hotels-one-stars">Рейтинг - звезда 2</span>
-            <span class="rating-hotels-one-stars">Рейтинг - звезда 3</span>
-            <span class="rating-hotels-one-stars">Рейтинг - звезда 4</span>
+            <span class="visually-hidden">Рейтинг - звезда 1</span>
+            <span class="visually-hidden">Рейтинг - звезда 2</span>
+            <span class="visually-hidden">Рейтинг - звезда 3</span>
+            <span class="visually-hidden">Рейтинг - звезда 4</span>
           </div>
           <div class="rating-hotels-numerals">
             <span class="rating-hotels-one-numerals">Рейтинг: 8.5</span>
@@ -139,10 +141,10 @@
           </div>
           <div class="rating-hotels-two">
             <div class="rating-hotels-stars">
-              <span class="rating-hotels-two-stars">Рейтинг - звезда 1</span>
-              <span class="rating-hotels-two-stars">Рейтинг - звезда 2</span>
-              <span class="rating-hotels-two-stars">Рейтинг - звезда 3</span>
-              <span class="rating-hotels-two-stars">Рейтинг - звезда 4</span>
+              <span class="visually-hidden">Рейтинг - звезда 1</span>
+              <span class="visually-hidden">Рейтинг - звезда 2</span>
+              <span class="visually-hidden">Рейтинг - звезда 3</span>
+              <span class="visually-hidden">Рейтинг - звезда 4</span>
             </div>
             <div class="rating-hotels-numerals">
               <span class="rating-hotels-two-numerals">Рейтинг: 8.9</span>
@@ -168,10 +170,10 @@
           </div>
           <div class="rating-hotels-three">
             <div class="rating-hotels-stars">
-              <span class="rating-hotels-three-stars">Рейтинг - звезда 1</span>
-              <span class="rating-hotels-three-stars">Рейтинг - звезда 2</span>
-              <span class="rating-hotels-three-stars">Рейтинг - звезда 3</span>
-              <span class="rating-hotels-three-stars">Рейтинг - звезда 4</span>
+              <span class="visually-hidden">Рейтинг - звезда k</span>
+              <span class="visually-hidden">Рейтинг - звезда 2</span>
+              <span class="visually-hidden">Рейтинг - звезда 3</span>
+              <span class="visually-hidden">Рейтинг - звезда 4</span>
             </div>
             <div class="rating-hotels-numerals">
               <span class="rating-hotels-three-numerals">Рейтинг: 8.9</span>
@@ -185,14 +187,14 @@
         </div>
         <div class="footer-socials">
          <ul>
-           <li><a class="btn btn-social btn-twitter" href="#">Twitter</a></li>
-           <li><a class="btn btn-social btn-facebook" href="#">Facebook</a></li>
-           <li><a class="btn btn-social btn-youtube" href="#">Youtube</a></li>
+           <li><a class="btn btn-social btn-twitter visually-hidden" href="#">Twitter</a></li>
+           <li><a class="btn btn-social btn-facebook visually-hidden" href="#">Facebook</a></li>
+           <li><a class="btn btn-social btn-youtube visually-hidden" href="#">Youtube</a></li>
          </ul>
        </div>
        <div class="footer-copyright">
          <b class="websiteby">website by</b>
-         <a class="htmlacademy" href="#">htmlacademy</a>
+         <a class="htmlacademy visually-hidden" href="https://htmlacademy.ru/">htmlacademy</a>
        </div>
       </footer>
     </div>

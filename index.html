@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>Седона</title>
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <div class="main-page">
@@ -11,7 +13,7 @@
           <li class="main-menu-item"><a class="main-menu-link"href="#" tabindex="1">Информация</a></li>
           <li class="main-menu-item"><a class="main-menu-link"href="#">Фото и видео</a></li>
           <li class="main-menu-item"><a class="main-menu-link"href="#">Карта штата</a></li>
-          <li class="main-menu-item"><a class="main-menu-link"href="#">гостиницы</a></li>
+          <li class="main-menu-item"><a class="main-menu-link"href="inner.html">гостиницы</a></li>
         </ul>
         <a class="logo" href="#" width="" height="">логотип страницы</a>
       </header>
@@ -100,15 +102,15 @@
                 <input type="text" name="Departure_date" id="Departure_date" value="4 ИЮЛЯ 2017" required>
                 <div class="half-width">
                   <label for="adults">Взрослые:</label>
-                  <button type="button">-</button>
-                  <input type="text" name="adults" id="adults" required>
-                  <button type="button">+</button>
+                  <button type="button"><span class="visually-hidden">Минус</span></button>
+                  <input type="text" name="adults" id="adults" placeholder="2" required>
+                  <button type="button"><span class="visually-hidden">Плюс</span></button>
                 </div>
                 <div class="half-width">
                   <label for="children">Дети:</label>
-                  <button type="button">-</button>
-                  <input type="text" name="children" id="children" required>
-                  <button type="button">+</button>
+                  <button type="button"><span class="visually-hidden">Минус</span></button>
+                  <input type="text" name="children" id="children" placeholder="0" required>
+                  <button type="button"><span class="visually-hidden">Плюс</span></button>
                   <a class="btn-search" href="#">Найти</a>
                 </div>
               </fielset>
@@ -125,14 +127,14 @@
         </div>
         <div class="footer-socials">
          <ul>
-           <li><a class="btn btn-social btn-twitter" href="#">Twitter</a></li>
-           <li><a class="btn btn-social btn-facebook" href="#">Facebook</a></li>
-           <li><a class="btn btn-social btn-youtube" href="#">Youtube</a></li>
+           <li><a class="btn btn-social btn-twitter visually-hidden" href="#">Twitter</a></li>
+           <li><a class="btn btn-social btn-facebook visually-hidden" href="#">Facebook</a></li>
+           <li><a class="btn btn-social btn-youtube visually-hidden" href="#">Youtube</a></li>
          </ul>
        </div>
        <div class="footer-copyright">
          <b class="websiteby">website by</b>
-         <a class="htmlacademy" href="#">htmlacademy</a>
+         <a class="htmlacademy visually-hidden" href="https://htmlacademy.ru/">htmlacademy</a>
        </div>
       </footer>
     </div>
