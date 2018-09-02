@@ -17,67 +17,109 @@
       </header>
       <!--Разметка блока с фильтрами-->
       <div class="filter-hotels">
-        <div class="filter-hotels-infrastructure">
-          <h2 class="filter-hotels-infrastructure-heading">Инфраструктура:</h2>
-          <span>Форма с чекбоксами</span>
-        </div>
-        <div class="filter-hotels-type_of_house">
-          <h2 class="filter-hotels-type_of_house-heading">Тип жилья:</h2>
-          <span>Форма с чекбоксами</span>
-        </div>
-        <div class="filter-hotels-cost">
-          <h2 class="filter-hotels-cost-heading">Стоимость в сутки (Р):</h2>
-          <form action=""></form>
-          <a href="#" class="btn-hotels-cost">Показать</a>
-        </div>
-      </div>
-      <div class="catalog-hotels-header">
-        <div class="catalog-hotels-header-heading">
-          <h2>Найдено:</h2><span>3</span>
-        </div>
-        <div class="catalog-hotels-header-sorting">
-          <h3>Сортировка</h3>
-          <ul class="catalog-hotels-header-list">
-            <li class="catalog-hotels-header-item"><a href="#">По цене</a></li>
-            <li class="catalog-hotels-header-item"><a href="#"></a>По типу</li>
-            <li class="catalog-hotels-header-item"><a href="#"></a>По рейтингу</li>
-          </ul>
-        </div>
-        <div class="catalog-hotels-header-btn">
-          <span>1 Кнопка сортировки в виде треугольника</span>
-          <span>2 Кнопка сортировки в виде треугольника</span>
-        </div>
-      </div>
-      <section class="type-hotels">
-        <div class="type-hotels-one">
-          <figure class="type-hotels-one-image">
-            <img src="img/amara.jpg" width="136" height="90" alt="Amara resort & SPA">
-          </figure>
-          <div class="type-hotels-one-description">
-            <div class="name-hotels-one">
-              <h2 class="name-hotels-one-heading">Amara resort & SPA</h2>
-            </div>
-            <div class="name-hotels-one-description">
-              <span>гостиница</span>
-              <span>От 4000</span>
-            </div>
-            <div class="type-hotels-btn">
-              <a class="type-hotels-btn_detail" href="#">Подробнее</a>
-              <a class="type-hotels-btn_booking" href="#">Забронировать</a>
-            </div>
+        <form class="filters-form" action="/echo" method="post">
+          <div class="filter-options">
+            <fieldset class="options">
+              <h2 class="filter-options-title">Инфраструктура:</h2>
+              <ul>
+                <li>
+                  <input class="form-checkbox" type="checkbox" name="facilities-1" checked>
+                  <label class="form-label" for="facilities-1">Бассейн</label>
+                </li>
+                <li>
+                  <input class="form-checkbox" type="checkbox" name="facilities-2">
+                  <label class="form-label" for="facilities-2">Парковка</label>
+                </li>
+                <li>
+                  <input class="form-checkbox" type="checkbox" name="facilities-3">
+                  <label class="form-label" for="facilities-3">Wi-Fi</label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="options">
+              <h2 class="filter-options-title">Тип жилья:</h2>
+              <ul>
+                <li>
+                  <input class="form-checkbox" type="checkbox" name="housing-1" checked>
+                  <label class="form-label" for="housing-1">Гостиница</label>
+                </li>
+                <li>
+                  <input class="form-checkbox" type="checkbox" name="housing-2" checked>
+                  <label class="form-label" for="housing-2">Мотель</label>
+                </li>
+                <li>
+                  <input class="form-checkbox" type="checkbox" name="housing-3" checked>
+                  <label class="form-label" for="housing-3">Апартаменты</label>
+                </li>
+              </ul>
+            </fieldset>
           </div>
-          <div class="rating-hotels-one">
-            <div class="rating-hotels-stars">
-              <span class="rating-hotels-one-stars">Рейтинг - звезда 1</span>
-              <span class="rating-hotels-one-stars">Рейтинг - звезда 2</span>
-              <span class="rating-hotels-one-stars">Рейтинг - звезда 3</span>
-              <span class="rating-hotels-one-stars">Рейтинг - звезда 4</span>
-            </div>
-            <div class="rating-hotels-numerals">
-              <span class="rating-hotels-one-numerals">Рейтинг: 8.5</span>
+        </form>
+      </div>
+      <div class="filter-cost column">
+        <h2 class="filter-title">Стоимость в сутки (Р):</h2>
+        <div class="cost-control" id="cost-control">
+          <div class="cost-group">
+            <label>от <input class="cost-input cost-input-min" type="text" name="cost-from" value="0"></label>
+            <label>до <input class="cost-input cost-input-max" type="text" name="cost-to" value="3000"></label>
+          </div>
+          <div class="range">
+            <div class="scale">
+              <button class="scale-slider scale-slider-min" type="button" tabindex="-1"></button>
+              <button class="scale-slider scale-slider-max" type="button" tabindex="-1"></button>
             </div>
           </div>
         </div>
+        <button class="btn btn-show" type="submit">Показать</button>
+      </div>
+    </div>
+    <div class="catalog-hotels-header">
+      <div class="catalog-hotels-header-heading">
+        <h2>Найдено: 3</h2>
+      </div>
+      <div class="catalog-hotels-header-sorting">
+        <h3>Сортировка</h3>
+        <ul class="catalog-hotels-header-list">
+          <li class="catalog-hotels-header-item"><a href="#">По цене</a></li>
+          <li class="catalog-hotels-header-item"><a href="#">По типу</a></li>
+          <li class="catalog-hotels-header-item"><a href="#">По рейтингу</a></li>
+        </ul>
+      </div>
+      <div class="catalog-hotels-header-btn">
+        <span>1 Кнопка сортировки в виде треугольника</span>
+        <span>2 Кнопка сортировки в виде треугольника</span>
+      </div>
+    </div>
+    <section class="type-hotels">
+      <div class="type-hotels-one">
+        <figure class="type-hotels-one-image">
+          <img src="img/amara.jpg" width="136" height="90" alt="Amara resort & SPA">
+        </figure>
+        <div class="type-hotels-one-description">
+          <div class="name-hotels-one">
+            <h2 class="name-hotels-one-heading">Amara resort & SPA</h2>
+          </div>
+          <div class="name-hotels-one-description">
+            <span>гостиница</span>
+            <span>От 4000</span>
+          </div>
+          <div class="type-hotels-btn">
+            <a class="type-hotels-btn_detail" href="#">Подробнее</a>
+            <a class="type-hotels-btn_booking" href="#">Забронировать</a>
+          </div>
+        </div>
+        <div class="rating-hotels-one">
+          <div class="rating-hotels-stars">
+            <span class="rating-hotels-one-stars">Рейтинг - звезда 1</span>
+            <span class="rating-hotels-one-stars">Рейтинг - звезда 2</span>
+            <span class="rating-hotels-one-stars">Рейтинг - звезда 3</span>
+            <span class="rating-hotels-one-stars">Рейтинг - звезда 4</span>
+          </div>
+          <div class="rating-hotels-numerals">
+            <span class="rating-hotels-one-numerals">Рейтинг: 8.5</span>
+          </div>
+        </div>
+      </div>
         <div class="type-hotels-two">
           <figure class="type-hotels-two-image">
             <img src="img/desert.jpg" width="136" height="90" alt="Desert Quail inn">
